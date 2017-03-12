@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpaceAvoid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" integrity="sha256-6ZFIKt0ohcBorQWIruhlYBoADBIFrJuXtEJsjFxb2Wk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.3/outdatedbrowser.min.css" />
+  </head>
+  <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.3/outdatedbrowser.min.js"></script>
+      <section class="section">
+        <div class="container has-text-centered">
+          <div class="heading">
+            <h1 class="title">SpaceAvoid</h1>
+            <h2 class="subtitle">
+              A simple GAME on the <strong>I2C LCD1602</strong>.
+            </h2>
+          </div>
+          <div class="content">
+            <p>
+              <span class="button is-primary" id="btn_up">Up</span>
+              <span class="button is-primary" id="btn_down">Down</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    <div class="container has-text-centered">
+      <span class="button is-danger" id="btn_reset">Reset</span>
+    </div>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+        $(document).ready(function() {
+            console.log('jo');
+            $('#btn_up').click(function() {
+                $.ajax({
+                    url: "/up",
+                    type: "GET",
+                    dataType: "json"
+                })
+                .done(function( json ) {
+                    if (json.success === true) {
+                        console.log('up');
+                    }
+                });
+            });
+
+            $('#btn_down').click(function() {
+                $.ajax({
+                    url: "/down",
+                    type: "GET",
+                    dataType: "json"
+                })
+                .done(function( json ) {
+                    if (json.success === true) {
+                        console.log('down');
+                    }
+                });
+            });
+
+            $('#btn_reset').click(function() {
+                $.ajax({
+                    url: "/reset",
+                    type: "GET",
+                    dataType: "json"
+                })
+                .done(function( json ) {
+                    if (json.success === true) {
+                        console.log('reset');
+                    }
+                });
+            });
+        });
+    </script>
+  </body>
+</html>
