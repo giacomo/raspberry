@@ -13,10 +13,13 @@
   "author": "giacomo barbalinardo",
   "license": "MIT",
   "dependencies": {
+    "dateformat": "^2.0.0",
     "death": "^1.1.0",
     "express": "^4.14.1",
+    "icu-loader": "^2.0.3",
     "lcdi2c": "^1.0.6",
     "lirc_node": "0.0.4",
+    "mathjs": "^3.10.0",
     "mmm-usonic": "^2.5.3",
     "node-arecord": "0.0.2",
     "node-dht-sensor": "0.0.32",
