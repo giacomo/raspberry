@@ -15,15 +15,21 @@
   "dependencies": {
     "dateformat": "^2.0.0",
     "death": "^1.1.0",
+    "ds18b20": "^0.1.0",
+    "ds2482-temperature": "^0.2.0",
     "express": "^4.14.1",
+    "ghoma": "^1.0.4",
     "icu-loader": "^2.0.3",
     "lcdi2c": "^1.0.6",
     "lirc_node": "0.0.4",
     "mathjs": "^3.10.0",
     "mmm-usonic": "^2.5.3",
+    "mpg123": "^0.2.3",
     "node-arecord": "0.0.2",
     "node-dht-sensor": "0.0.32",
     "node-hue-api": "^2.4.1",
+    "node-max7219": "^1.0.23",
+    "node-max7219-led-matrix": "^1.0.0",
     "node-omxplayer": "^0.4.1",
     "oled-font-5x7": "^1.0.0",
     "oled-i2c-bus": "^1.0.9",
@@ -34,6 +40,7 @@
     "raspi-soft-pwm": "^2.0.2",
     "rpio": "^0.9.16",
     "sleep": "^5.1.0",
+    "spi": "^0.2.0",
     "temporal": "^0.5.0"
   }
 }
