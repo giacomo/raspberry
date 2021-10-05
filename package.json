@@ -22,7 +22,7 @@
     "icu-loader": "^2.0.3",
     "lcdi2c": "^1.0.6",
     "lirc_node": "0.0.4",
-    "mathjs": "^3.10.0",
+    "mathjs": "^9.5.0",
     "mmm-usonic": "^2.5.3",
     "mpg123": "^0.2.3",
     "node-arecord": "0.0.2",
